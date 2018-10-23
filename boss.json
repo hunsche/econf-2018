@@ -6,5 +6,8 @@
 	"homepage": "",
 	"mainsrc": "src/",
 	"supported": "xe+",
-	"dprojFile": ""
+	"dprojFile": "",
+	"dependencies": {
+		"github.com/HashLoad/horse": "^1.6.1"
+	}
 }

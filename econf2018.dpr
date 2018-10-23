@@ -5,13 +5,18 @@ program econf2018;
 {$R *.res}
 
 uses
-  System.SysUtils;
+  Horse, System.Classes, System.SysUtils;
 
+var
+  App: THorse;
 begin
-  try
-    { TODO -oUser -cConsole Main : Insert code here }
-  except
-    on E: Exception do
-      Writeln(E.ClassName, ': ', E.Message);
-  end;
+  App := THorse.Create(9000);
+  App.Get('/ping',
+    procedure(Req: THorseRequest; Res: THorseResponse; Next: TProc
+    )
+    begin
+      Res.Send('pong');
+    end);
+  App.Start;
+
 end.

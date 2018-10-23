@@ -1,14 +1,16 @@
 
-### Este projeto usa o gerenciador de dependencias [boss](https://github.com/HashLoad/boss), para rodar o exemplo siga os passos abaixo:
+### Este projeto usa o gerenciador de dependencias [boss](https://github.com/HashLoad/boss).
 
-### Após instalar o boss no link acima, rode este comando no terminal.
+### Após instalar o boss e docker para windowns, rode estes comando no terminal no diretório do exemplo.
 ``` sh
 boss install
+docker-compose up
 ```
 
-### Após instalar o boss no link acima, rode este comando no terminal.
+### Configure o PAServer e compile.
 ```
 1. Abra o projeto .
-2. Configure o PAServer para apontar para a porta do arquivo docker-compose.yml.
-3. Escolha a Plataforma Linux64 e compile.
+2. Escolha a Plataforma Linux64.
+3. Configure o PAServer para apontar para a porta 64211 (você pode importar o arquivo paserver.profile em suas configurações de conexão).
+4. Compile e seja feliz *-*.
 ```
