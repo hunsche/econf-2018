@@ -75,7 +75,7 @@
         <DCC_UsePackage>RESTComponents;emsclientfiredac;DataSnapFireDAC;FlexCel_Report;FireDACIBDriver;emsclient;FireDACCommon;RESTBackendComponents;soapserver;CloudService;FireDACCommonDriver;inet;FireDAC;FireDACSqliteDriver;soaprtl;soapmidas;$(DCC_UsePackage)</DCC_UsePackage>
         <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
         <SanitizedProjectName>econf2018</SanitizedProjectName>
-        <DCC_UnitSearchPath>;modules\horse\src;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_UnitSearchPath>;$(DCC_UnitSearchPath);$(DCC_UnitSearchPath);modules\horse\src</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Android)'!=''">
         <DCC_UsePackage>DBXSqliteDriver;DBXInterBaseDriver;FMX_FlexCel_Core;tethering;bindcompfmx;fmx;FireDACDBXDriver;dbexpress;IndyCore;dsnap;DataSnapCommon;bindengine;DataSnapClient;IndyIPCommon;bindcompdbx;IndyIPServer;IndySystem;fmxFireDAC;DbxCommonDriver;xmlrtl;DataSnapNativeClient;FireDACDSDriver;rtl;DbxClientDriver;CustomIPTransport;bindcomp;IndyIPClient;FMX_FlexCel_Components;dbxcds;dsnapxml;DataSnapProviderClient;dbrtl;IndyProtocols;$(DCC_UsePackage)</DCC_UsePackage>
@@ -600,14 +600,14 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"/>
-                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"/>
-                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
-                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
-                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSDevice64" Name="$(PROJECTNAME).app"></ProjectRoot>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"></ProjectRoot>
+                <ProjectRoot Platform="iOSDevice32" Name="$(PROJECTNAME).app"></ProjectRoot>
+                <ProjectRoot Platform="Linux64" Name="$(PROJECTNAME)"></ProjectRoot>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"></ProjectRoot>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"></ProjectRoot>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"></ProjectRoot>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"></ProjectRoot>
             </Deployment>
             <Platforms>
                 <Platform value="Android">False</Platform>
@@ -621,7 +621,7 @@
         </BorlandProject>
         <ProjectFileVersion>12</ProjectFileVersion>
     </ProjectExtensions>
-    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
-    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
-    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"></Import>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"></Import>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"></Import>
 </Project>
