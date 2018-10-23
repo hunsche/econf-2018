@@ -67,3 +67,6 @@ __recovery/
 
 # Boss Dependencies
 /modules
+
+# Linux
+/Linux64
